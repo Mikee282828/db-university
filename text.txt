@@ -1,0 +1,21 @@
+1) SELECT * FROM `students` WHERE `date_of_birth` LIKE '%1990%';
+
+2) SELECT * FROM `courses` WHERE `cfu` > 10;
+
+3) SELECT * FROM `students` WHERE `date_of_birth` < '1994-06-19'; 
+
+4) SELECT * FROM `courses` WHERE `period` = 'I semestre' AND `year` = 1; 
+
+5) SELECT * FROM `exams` WHERE `date` = '2020-06-20' AND `hour` > '14:00'; 
+
+6) SELECT * FROM `degrees` WHERE `level` = 'magistrale';
+
+7) SELECT COUNT(id) FROM `departments`; 
+
+8) SELECT COUNT(*) FROM `teachers` WHERE `phone` IS NULL 
+
+9) INSERT INTO `students` (`id`, `degree_id`, `name`, `surname`, `date_of_birth`, `fiscal_code`, `enrolment_date`, `registration_number`, `email`) VALUES (1234567, '19', 'michele', 'dong', '2003-11-28', 'asdfasdfasdf', '2024-06-19', '123412341234', 'micheledong2803@gmail.com'); 
+
+10) UPDATE `teachers` SET `office_number` = '126' WHERE `teachers`.`id` = 58 
+
+11) DELETE FROM `students` WHERE `email` = 'micheledong2803@gmail.com';
